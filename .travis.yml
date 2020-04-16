@@ -15,13 +15,14 @@ cache:
 
 jobs:
   include:
-    - stage: Lint
-      script: yarn lint
-    - stage: Test
-      script: yarn test
+    # - stage: Lint
+    #   script: yarn lint
+    # - stage: Test
+    #   script: yarn test
     - stage: Build
       script: yarn build
     - stage: Deploy
+      script: echo 'poc.bpdash.com' > ./build/CNAME
       deploy:
         provider: pages
         skip_cleanup: true,
