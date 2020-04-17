@@ -1,4 +1,4 @@
-# Play
+# Hacker News [![Build Status](https://travis-ci.org/dashbh/hackernews.svg?branch=master)](https://travis-ci.org/dashbh/hackernews)
 
 In the project directory, you can run:
 
@@ -13,7 +13,3 @@ Runs the linting of code.<br />
 ### `yarn build`
 
 Builds the app for production to the `build` folder.<br />
-
-### `yarn storybook`
-
-Runs the app in the storybook mode.<br />
