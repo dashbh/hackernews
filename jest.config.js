@@ -12,5 +12,8 @@ module.exports = {
   },
   testMatch: [
     "<rootDir>/src/**/*.(spec|test).(ts|tsx|js)"
-  ]
+  ],
+  moduleNameMapper: {
+    '^.+\\.(css|scss)$': '<rootDir>/moduleStub.js'
+  }
 };

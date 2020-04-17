@@ -44,6 +44,7 @@ $breakpoint-tablet: 768px;
         @media (max-width: $breakpoint-tablet) {
             text-align: right;
             padding: 0;
+            display: block;
         }
     }
 

@@ -29,6 +29,15 @@ module.exports = (env, argv) => ({
         port: 3000
     },
     optimization: {
+        runtimeChunk: 'single',
+        splitChunks: {
+            chunks: 'all',
+            cacheGroups: {
+                vendors: {
+                    test: /[\\/]node_modules[\\/]/
+                }
+            }
+        },
         minimize: true,
         minimizer: [
             new TerserPlugin({
