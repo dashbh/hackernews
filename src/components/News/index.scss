@@ -1,3 +1,5 @@
+$breakpoint-tablet: 768px;
+
 .news {
     li {
         padding: 5px;
@@ -11,6 +13,9 @@
 .story {
     &__title {
         padding: 0 10px;
+        @media (max-width: $breakpoint-tablet) {
+            padding: 0 2px;
+        }
     }
 
     &__meta {
@@ -19,10 +24,18 @@
         b {
             color: #4c535f;
         }
+        @media (max-width: $breakpoint-tablet) {
+            display: block;
+            margin-top: 5px;
+            text-align: right;
+        }
     }
 
     &__comment-count {
         width: 75px;
+        @media (max-width: $breakpoint-tablet) {
+            width: 10px;
+        }
         display: inline-block;
         text-align: center;
     }
@@ -36,6 +49,12 @@
     &__toggle-user {
         color: #000;
         padding: 0 10px;
+        @media (max-width: $breakpoint-tablet) {
+            text-align: right;
+            display: block;
+            font-size: 7.5pt;
+            padding: 0;
+        }
     }
 
     &__upvote {
@@ -44,6 +63,9 @@
         display: inline-block;
         height: 10px;
         margin-right: 10px;
+        @media (max-width: $breakpoint-tablet) {
+            margin-right: 2px;
+        }
         background-image: url("data:image/gif;base64,R0lGODlhCgAKALMJANPT06enp/b29r+/v52dnfn5+bq6usLCwpqamv///wAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAkALAAAAAAKAAoAAAQcMMlJq712GIzQDV1QFV0nUETZTYDaAdIhz3ISAQA7");
     }
 }
